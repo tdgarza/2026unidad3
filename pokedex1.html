@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pokedex1.css">
+    <title>Pokédex Web App</title>
+</head>
+<body>
+    <header>
+        <h1>MAESTRO POKÉMON: TOMAS GARZA</h1>
+    </header>
+
+    <main class="main-container">
+        <section class="poke-card">
+            <div class="search-container">
+                <input type="text" placeholder="Ej: Pikachu" id="pokeName" name="pokeName" class="placeholder">
+                <button onclick="fetchPokemon()" class="boton-busqueda">Buscar</button>
+            </div>
+            
+            <div class="image-wrapper">
+                <img src="./pokemaster.png" alt="PokeMaster" id="pokeImg" class="pokeImg">
+            </div>
+        </section>
+
+        <section class="info-container">
+            <div id="pokename" class="stat-item name"></div>
+            <div class="stats-grid">
+                <div id="pokeHe" class="stat-item"></div>
+                <div id="pokeWe" class="stat-item"></div>
+                <div id="pokeType" class="stat-item"></div>
+                <div id="pokeitem" class="stat-item"></div>
+            </div>
+            <div class="moves-container">
+                <div id="pokemove1" class="move-badge"></div>
+                <div id="pokemove2" class="move-badge"></div>
+                <div id="pokemove3" class="move-badge"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="pokedex1.js"></script>
+</body>
+</html>

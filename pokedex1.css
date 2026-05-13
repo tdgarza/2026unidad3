@@ -1,0 +1,108 @@
+/* Configuración General */
+body {
+    background-color: #c70102; /* Rojo clásico de Pokédex */
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Contenedor Principal */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    gap: 20px;
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Buscador */
+.search-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.placeholder {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 60%;
+    font-size: 18px;
+}
+
+.boton-busqueda {
+    background-color: #f9ee60;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Imagen del Pokémon */
+.image-wrapper {
+    background-color: #ffffff;
+    border: 10px solid #dedede;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 250px;
+}
+
+.pokeImg {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+/* Información */
+.info-container {
+    background-color: #313131;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: inset 0 0 10px #000;
+}
+
+.stat-item {
+    margin: 10px 0;
+    font-size: 1.2rem;
+    border-bottom: 1px solid #444;
+}
+
+.name {
+    color: #f9ee60;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Adaptación para Computadoras (Pantallas grandes) */
+@media (min-width: 768px) {
+    .main-container {
+        flex-direction: row; /* Pone la imagen a un lado y la info al otro */
+        align-items: stretch;
+    }
+
+    .poke-card, .info-container {
+        flex: 1;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+}
